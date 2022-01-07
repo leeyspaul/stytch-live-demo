@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>paullee | Stytch live demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="magic-links-demo">
+      <form action="{{ url_for('email_magic_link') }}" method="POST">
+          <p>Enter your email to receive a magic link.</p>
+          <input type="text" name="email">
+          <p>By continuing, you will receive an email to log in. Click the log in button and you will be redirected to an authentication page.</p>
+          <input type="submit" class="email-otp-demo btn" value="Continue">
+      </form>
+  </div>
+  </body>
+</html>

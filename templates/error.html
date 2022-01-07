@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>paullee | Stytch live demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+    <body>
+        <div class="error">
+            <h1>500 Internal Server Error</h1>
+            <h2>We're sorry, something went wrong on our end.</h2>
+            <a href="{{ url_for('demo') }}">
+                <input type="submit" class="btn" value="Try another product">
+            </a>
+        </div>
+    </body>
+  </html>

@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+	background-color:#ffffff;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-size:22px;
+	padding:15px 43px;
+	text-decoration:none;
+}
+
+body {
+    font-family:Verdana;
+}
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+select, input {
+    border-radius:8px;
+    display:inline-block;
+    padding:15px 43px;
+    margin-bottom: 15px;
+}

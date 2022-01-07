@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>paullee | Stytch live demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Stytch Demo</h1>
+      <h2>Explore Stytch products</h2>
+      <div class="demo">
+        <form action="{{ url_for('launch_demo') }}" method="post">
+          <div class="select">
+            <select name="demo-product" id="demo-products">
+              <option value>Choose a product.</option>
+              <option value="email-magic-links">Email magic link</option>
+              <option value="sms-otp">SMS one-time passcode</option>
+              <option value="email-otp">Email one-time passcode</option>
+              <option value="whatsapp-otp">WhatsApp one-time passcode</option>
+            </select>
+          </div>
+          <input type="submit" class="btn" value="Launch Demo">
+        </form>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

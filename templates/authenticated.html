@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>paullee | Stytch live demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+    <body>
+        <div class="authenticated">
+            <h2>Successfully authenticated by {{data.method}}</h2>
+            <a href="{{ url_for('demo') }}">
+                <input type="submit" class="btn" value="Try another product">
+            </a>
+            <a href="https://stytch.com/docs">
+                <input type="submit" class="btn" value="Start building your own flow">
+            </a>
+        </div>
+    </body>
+  </html>

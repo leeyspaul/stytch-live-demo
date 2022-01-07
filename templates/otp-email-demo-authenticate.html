@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>paullee | Stytch live demo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+    <body>
+        <div class="otp-demo">
+            <form action="{{ url_for('otps_email_demo_authenticate') }}", method="POST">
+                <p>A 6-digit passcode was sent to you.</p>
+                <input type="text" name="otp-passcode">
+                <input type="submit" class="email-otp-demo btn" value="Continue">
+            </form>
+        </div>
+    </body>
+  </html>
